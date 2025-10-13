@@ -109,7 +109,7 @@
 </head>
 <body>
 <!--{{ route('login') }}-->
-    <form method="POST" action="https://da162d18303b.ngrok-free.app/login" class="login-container">
+    <form method="POST" action="/login" class="login-container">
         @csrf
         <h1>Login</h1>
 
