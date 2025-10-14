@@ -4,4 +4,4 @@
 - [ ] Laravel 8
 
 ## URL
-<a href="https://atenas.edu.br/Atena" target="_blank">Demo portal atena</a>
+https://atenas.edu.br/Atena
