@@ -7,6 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ asset('favicon.png') }}" rel="apple-touch-icon" sizes="180x180" type="image/png">
     <title>Login - Atena</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
    
@@ -109,7 +110,7 @@
 </head>
 <body>
 <!--{{ route('login') }}-->
-    <form method="POST" action="/login" class="login-container">
+    <form method="POST" action="https://da162d18303b.ngrok-free.app/login" class="login-container">
         @csrf
         <h1>Login</h1>
 
@@ -135,7 +136,7 @@
             @if (Route::has('password.request'))
                 <a href="{{ route('password.request') }}">Esqueceu sua senha?</a>
             @endif
-            <a href="{{ route('register') }}">Criar conta</a>
+
         </div>
     </form>
 </body>

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
+
     <title>Conheça Atena: Sua Nova Tutora 24 Horas!</title>
 
     <style>
@@ -438,9 +440,34 @@ footer {
 
     <div class="particles"></div>
 
-    <header>
-        <img src="{{ asset('logo.png') }}" alt="Logo Uniatenas">
-    </header>
+<header style="display: flex; align-items: center; justify-content: center; position: relative; padding: 10px;">
+    <!-- Espaçador invisível para equilibrar -->
+    <div style="width: 28px;"></div>
+
+    <!-- Logo centralizada -->
+    <img src="{{ asset('logo.png') }}" alt="Logo Uniatenas" style="height: 50px;">
+
+    <!-- Ícone de logout à direita -->
+    <a href="{{ route('logout') }}" 
+       onclick="event.preventDefault(); document.getElementById('logout-form').submit();" 
+       title="Sair" 
+       style="position: absolute; right: 10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 24 24" width="28" height="28">
+        <path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 
+                11H3v2h9.67l-2.58 2.59zM19 
+                3h-8v2h8v14h-8v2h8c1.1 
+                0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+        </svg>
+
+    </a>
+
+    <form id="logout-form" action="{{ secure_url(route('logout', [], false)) }}" method="POST" style="display: none;">
+        @csrf
+    </form>
+</header>
+
+
+
 
     <main>
         <h1>Conheça Atena</h1>

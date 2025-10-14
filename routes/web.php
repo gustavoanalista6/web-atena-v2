@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,14 +17,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-})->middleware('auth'); // protege a rota principal
+})->middleware('auth'); 
 
 Route::get('/login', function () {
     return view('login');
-})->name('login'); // nomeie a rota de login para facilitar o redirecionamento
+})->name('login'); 
 
-Auth::routes();
+Auth::routes(['register' => false]); 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/config', [App\Http\Controllers\ConfigController::class, 'deploy']); 
 
-Route::get('/config', [App\Http\Controllers\ConfigController::class, 'deploy']); // nomeie a rota de login para facilitar o redirecionamento
+Route::get('/policies', [App\Http\Controllers\PoliticaController::class, 'index']); 
+Route::get('/app-privacy', [App\Http\Controllers\PoliticaController::class, 'app_privacy']); 
+Route::get('/privacy-policy', [App\Http\Controllers\PoliticaController::class, 'privacy_policy']); 
