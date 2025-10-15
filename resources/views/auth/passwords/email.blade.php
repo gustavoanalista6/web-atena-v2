@@ -112,7 +112,8 @@
         }
 
         .invalid-feedback {
-            color: red;
+            color: var(--laranja);
+            text-decoration:none;
             font-size: 0.9rem;
         }
     </style>
@@ -134,7 +135,7 @@
 
         @error('email')
             <span class="invalid-feedback" role="alert">
-                <strong>{{ $message }}</strong>
+                <strong>{!! $message !!}</strong>
             </span>
         @enderror
 

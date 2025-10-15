@@ -28,6 +28,6 @@ Auth::routes(['register' => false]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/config', [App\Http\Controllers\ConfigController::class, 'deploy']); 
 
-Route::get('/policies', [App\Http\Controllers\PoliticaController::class, 'index']); 
-Route::get('/app-privacy', [App\Http\Controllers\PoliticaController::class, 'app_privacy']); 
-Route::get('/privacy-policy', [App\Http\Controllers\PoliticaController::class, 'privacy_policy']); 
+Route::get('/policies', [App\Http\Controllers\PoliticaController::class, 'index'])->name('policies'); 
+Route::get('/app-privacy', [App\Http\Controllers\PoliticaController::class, 'app_privacy'])->name('app-privacy'); 
+Route::get('/privacy-policy', [App\Http\Controllers\PoliticaController::class, 'privacy_policy'])->name('privacy-policy'); 

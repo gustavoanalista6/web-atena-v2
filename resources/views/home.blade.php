@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
 
-    <title>Conheça Atena: Sua Nova Tutora 24 Horas!</title>
+    <title>Conhe&#231a Atena: Sua Nova Tutora 24 Horas!</title>
 
     <style>
         
@@ -440,6 +440,7 @@ footer {
 
     <div class="particles"></div>
 
+
 <header style="display: flex; align-items: center; justify-content: center; position: relative; padding: 10px;">
     <!-- Espaçador invisível para equilibrar -->
     <div style="width: 28px;"></div>
@@ -461,17 +462,14 @@ footer {
 
     </a>
 
-    <form id="logout-form" action="{{ secure_url(route('logout', [], false)) }}" method="POST" style="display: none;">
+    <form id="logout-form" action="https://atenas.edu.br/Atena/logout" method="POST" style="display: none;">
         @csrf
     </form>
 </header>
 
-
-
-
     <main>
-        <h1>Conheça Atena</h1>
-        <h2 class="typing-effect">Sua Nova Tutora 24 Horas! Educação do futuro, hoje.</h2>
+        <h1>Conhe&#231a Atena</h1>
+        <h2 class="typing-effect">Sua Nova Tutora 24 Horas! Educa&#231&#227o do futuro, hoje.</h2>
 
         <div class="author-container">
             <img src="{{ asset('atena.jpg') }}" alt="Tutora Atena" id="author">
@@ -545,7 +543,7 @@ footer {
 
     <footer>
         <div class="footer-content">
-            <span>© 2025 Faculdade Atenas. Transformando a educação com tecnologia.</span>
+            <span>&#169 2025 Faculdade Atenas. Transformando a educa&#231&#227o com tecnologia.</span>
             <div class="social-icons">
                 <a href="https://wa.me/5536723737" target="_blank" class="social-icon whatsapp-icon" title="WhatsApp">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

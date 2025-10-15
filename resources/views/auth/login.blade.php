@@ -136,7 +136,6 @@
             @if (Route::has('password.request'))
                 <a href="{{ route('password.request') }}">Esqueceu sua senha?</a>
             @endif
-
         </div>
     </form>
 </body>

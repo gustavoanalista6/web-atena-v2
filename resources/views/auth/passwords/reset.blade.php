@@ -87,8 +87,9 @@
         }
 
         .invalid-feedback {
-            color: red;
+            color: var(--laranja);
             font-size: 0.9rem;
+            text-decoration:none;
             margin-bottom: 5px;
         }
 
