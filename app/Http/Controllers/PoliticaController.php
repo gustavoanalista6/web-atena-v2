@@ -11,12 +11,15 @@ class PoliticaController extends Controller
         return view('policies.index');
     }
 
-
     public function privacy_policy(){
         return view('policies.privacy_policy');
     }
 
-    public function app_privacy(){
-        return view('policies.app_privacy');
+    public function policy_cookies(){
+        return view('policies.policy_cookies');
+    }
+
+    public function terms_use(){
+        return view('policies.terms_use');
     }
 }

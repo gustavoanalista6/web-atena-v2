@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
@@ -31,3 +32,5 @@ Route::get('/config', [App\Http\Controllers\ConfigController::class, 'deploy']);
 Route::get('/policies', [App\Http\Controllers\PoliticaController::class, 'index'])->name('policies'); 
 Route::get('/app-privacy', [App\Http\Controllers\PoliticaController::class, 'app_privacy'])->name('app-privacy'); 
 Route::get('/privacy-policy', [App\Http\Controllers\PoliticaController::class, 'privacy_policy'])->name('privacy-policy'); 
+Route::get('/terms-use', [App\Http\Controllers\PoliticaController::class, 'terms_use'])->name('terms-use'); 
+Route::get('/policy-cookies', [App\Http\Controllers\PoliticaController::class, 'policy_cookies'])->name('policy-cookies'); 

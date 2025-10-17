@@ -106,11 +106,67 @@
         .extras a:hover {
             text-decoration: underline;
         }
+
+      
+        .container-policy {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--laranja);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Melhor aparência do checkbox */
+.container-policy input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    accent-color: var(--laranja);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.container-policy input[type="checkbox"]:hover {
+    transform: scale(1.15);
+}
+
+/* Estilo do texto */
+.container-policy label {
+    cursor: pointer;
+}
+
+/* Links */
+.container-policy label a {
+    color: var(--laranja);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.container-policy label a:hover {
+    text-decoration: underline;
+    color: var(--azul);
+}
+
+/* Efeito de foco para acessibilidade */
+.container-policy input[type="checkbox"]:focus-visible {
+    outline: 2px solid var(--azul);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+
+
     </style>
 </head>
 <body>
 <!--{{ route('login') }}-->
-    <form method="POST" action="https://da162d18303b.ngrok-free.app/login" class="login-container">
+    <form method="POST" action="/login" class="login-container">
         @csrf
         <h1>Login</h1>
 
@@ -130,6 +186,9 @@
             <span class="invalid-feedback">{{ $message }}</span>
         @enderror
 
+
+
+
         <button type="submit" class="btn-login">Entrar</button>
 
         <div class="extras">
@@ -137,6 +196,18 @@
                 <a href="{{ route('password.request') }}">Esqueceu sua senha?</a>
             @endif
         </div>
+
+
+
+      <div class="container-policy">
+        <input type="checkbox" id="policy" required>
+        <label for="policy">
+            
+            <a href="/policies" target="_blank">Aceito os Termos de Uso
+            e a Política de Privacidade</a>.
+        </label>
+    </div>
+
     </form>
 </body>
 </html>

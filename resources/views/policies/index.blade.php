@@ -166,11 +166,20 @@
             <span class="policy-arrow">›</span>
         </a>
 
-      
-        <a href="{{ route('app-privacy') }}" class="policy-item">
+        
+        <a href="{{ route('terms-use') }}" class="policy-item">
             <div>
-                <div class="policy-title">Declaração de Dados Coletados</div>
-                <div class="policy-description">Dados específicos que coletamos</div>
+                <div class="policy-title">Termos de uso</div>
+                <div class="policy-description">Termos de Uso e condições gerais de acesso, tem por finalidade precípua regular o acesso, a navegação e a utilização</div>
+            </div>
+            <span class="policy-arrow">›</span>
+        </a>
+
+      
+        <a href="{{ route('policy-cookies') }}" class="policy-item">
+            <div>
+                <div class="policy-title">Política de cookies</div>
+                <div class="policy-description">Política de Cookies com o objetivo primordial de conferir máxima transparência aos seus usuários</div>
             </div>
             <span class="policy-arrow">›</span>
         </a>
