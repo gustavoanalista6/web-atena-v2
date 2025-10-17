@@ -200,10 +200,8 @@
 
 
       <div class="container-policy">
-        <input type="checkbox" id="policy" required>
         <label for="policy">
-            
-            <a href="/policies" target="_blank">Aceito os Termos de Uso
+            <a href="{{route('policies')}}" >Aceito os Termos de Uso
             e a Política de Privacidade</a>.
         </label>
     </div>

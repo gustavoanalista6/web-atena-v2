@@ -29,8 +29,7 @@ Auth::routes(['register' => false]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/config', [App\Http\Controllers\ConfigController::class, 'deploy']); 
 
-Route::get('/policies', [App\Http\Controllers\PoliticaController::class, 'index'])->name('policies'); 
-Route::get('/app-privacy', [App\Http\Controllers\PoliticaController::class, 'app_privacy'])->name('app-privacy'); 
-Route::get('/privacy-policy', [App\Http\Controllers\PoliticaController::class, 'privacy_policy'])->name('privacy-policy'); 
-Route::get('/terms-use', [App\Http\Controllers\PoliticaController::class, 'terms_use'])->name('terms-use'); 
-Route::get('/policy-cookies', [App\Http\Controllers\PoliticaController::class, 'policy_cookies'])->name('policy-cookies'); 
+Route::get('/politicas', [App\Http\Controllers\PoliticaController::class, 'index'])->name('policies'); 
+Route::get('/politica-privacidade', [App\Http\Controllers\PoliticaController::class, 'privacy_policy'])->name('privacy-policy'); 
+Route::get('/termos-uso', [App\Http\Controllers\PoliticaController::class, 'terms_use'])->name('terms-use'); 
+Route::get('/politica-cookies', [App\Http\Controllers\PoliticaController::class, 'policy_cookies'])->name('policy-cookies'); 
