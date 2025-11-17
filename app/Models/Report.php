@@ -14,4 +14,8 @@ class Report extends Model
     protected $fillable = [
         'report'
     ];
+
+    protected $hidden = [
+        'created_at', 'updated_at'
+    ];
 }
