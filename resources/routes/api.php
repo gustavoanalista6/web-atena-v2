@@ -9,8 +9,6 @@ use App\Http\Controllers\Api\Auth\LoginController;
 use App\Http\Controllers\Api\Auth\ForgotPasswordController;
 use App\Http\Controllers\Api\Auth\ResetPasswordController;
 use App\Http\Controllers\Api\HomeController;
-use App\Http\Controllers\Api\UserController;
-use App\Http\Controllers\Api\ReportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,23 +21,18 @@ use App\Http\Controllers\Api\ReportController;
 |
 */
 
-Route::middleware('auth:sanctum')->group(function () {
-    Route::get('/user', function (Request $request) {
-        return $request->user();
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    //return $request->user();
+    Route::group([], function () {
+        Route::get('/home', [HomeController::class, 'index'])->name('home');
     });
 
-    Route::get('/home', [HomeController::class, 'index']);
-    Route::get('/user/{id}', [UserController::class, 'show']);
-    Route::put('/user/{id}', [UserController::class, 'update']);
 });
 
 Route::post('/register', [RegisterController::class, 'register']);
 Route::post('/login', [LoginController::class, 'login']);
+
 Route::post('/forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail']);
 Route::post('/reset-password', [ResetPasswordController::class, 'reset']);
-
-Route::post('/report', [ReportController::class, 'store']);
-
-
 
 

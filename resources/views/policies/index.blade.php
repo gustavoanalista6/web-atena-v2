@@ -150,7 +150,7 @@
 </head>
 <body>
     <div class="header">
-        <a href="{{ url()->previous() }}" class="chevron-container">‹</a>
+        <a href="{{ route('login') }}" class="chevron-container">‹</a>
         <h1 class="header-title">Políticas</h1>
         <div style="width:36px"></div>
     </div>

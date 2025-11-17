@@ -166,7 +166,7 @@
 </head>
 <body>
 <!--{{ route('login') }}-->
-    <form method="POST" action="/login" class="login-container">
+    <form method="POST" action="{{ route('login') }}" class="login-container">
         @csrf
         <h1>Login</h1>
 
@@ -201,7 +201,7 @@
 
       <div class="container-policy">
         <label for="policy">
-            <a href="{{route('policies')}}" >Aceito os Termos de Uso
+            <a href="{{route('policies')}}" target="_self">Aceito os Termos de Uso
             e a Política de Privacidade</a>.
         </label>
     </div>
