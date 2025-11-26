@@ -152,11 +152,10 @@
     <div class="content">
         <h2>TERMOS DE USO E CONDIÇÕES GERAIS DE ACESSO AOS SERVIÇOS DIGITAIS DO CENTRO EDUCACIONAL HYARTE-ML</h2>
 
-        <p>
-            O presente instrumento, denominado Termos de Uso e Condições Gerais de Acesso, tem por finalidade precípua regular o acesso, a navegação e a utilização de todos os sistemas, sites, plataformas digitais, aplicativos e quaisquer outros ambientes virtuais de propriedade ou sob gestão do Centro Educacional HYARTE-ML (doravante denominado simplesmente " CENTRO EDUCACIONAL HYARTE-ML " ou "Controlador"), estabelecendo as obrigações, responsabilidades e direitos tanto da Instituição quanto dos Usuários, em estrita conformidade com a legislação brasileira vigente, notadamente o Marco Civil da Internet (Lei nº 12.965/2014) e a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018).
-        </p>
+        <p>O presente instrumento, denominado Termos de Uso e Condições Gerais de Acesso, tem por finalidade precípua regular o acesso, a navegação e a utilização de todos os sistemas, sites, plataformas digitais, incluindo expressamente o site institucional e o aplicativo Atena, bem como quaisquer outros ambientes virtuais de propriedade ou sob gestão do Centro Educacional HYARTE-ML (doravante denominado simplesmente “CENTRO EDUCACIONAL HYARTE-ML” ou “Controlador”). Este documento estabelece as obrigações, responsabilidades e direitos tanto da Instituição quanto dos Usuários, em estrita conformidade com a legislação brasileira vigente, notadamente o Marco Civil da Internet (Lei nº 12.965/2014) e a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018).</p>
 
-        <p>Este documento representa um contrato vinculante entre o Usuário e o CENTRO EDUCACIONAL HYARTE-ML, sendo imprescindível que todo e qualquer indivíduo que pretenda utilizar os serviços digitais da Instituição realize uma leitura atenta, integral e detida de todas as disposições aqui contidas, uma vez que o acesso contínuo ou o logging nas plataformas implica a manifestação de concordância incondicional com as presentes condições, o que formaliza a aceitação plena das regras e diretrizes estabelecidas.</p>
+        <p>Este documento representa um contrato vinculante entre o Usuário e o CENTRO EDUCACIONAL HYARTE-ML, sendo imprescindível que todo e qualquer indivíduo que pretenda utilizar os serviços digitais da Instituição — inclusive o site institucional e o aplicativo Atena — realize uma leitura atenta, integral e detida de todas as disposições aqui contidas. O acesso contínuo, a navegação ou o login nas plataformas implica manifestação de concordância incondicional com as presentes condições, formalizando a aceitação plena das regras e diretrizes aqui estabelecidas.</p>
+
 
         <strong>1. DA ACEITAÇÃO E FORMALIZAÇÃO DO VÍNCULO JURÍDICO</strong>
 
